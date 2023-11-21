@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_20sdp"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:text="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        style="@style/text_18black_bold"
+        android:layout_marginTop="@dimen/_10sdp"
+       />
+    <TextView
+        android:id="@+id/dynamic_msg"
+        android:text="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+
+        style="@style/text_14light_gray_"
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+
+
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:text=" Ok "
+        android:textColor="@color/white"
+        android:background="@drawable/signupbackground"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".view_section.ui.other_activity.SubscriptionActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_header_comment"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_header_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:text="Subscription Page" />
+
+    </RelativeLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/examdetails"
+                android:background="@color/white"
+                android:padding="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_class_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Class IX -Kerala State-Language Special with"/>
+
+                <LinearLayout
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        android:text="discription"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_mrp"
+                        android:layout_weight="1.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        android:text="4500 Rs"/>
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_weight="0.7"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="1500 Rs"
+                        />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/gray"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_height="@dimen/_1sdp">
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvPayNow"
+                    android:paddingRight="@dimen/_30sdp"
+                    android:paddingLeft="@dimen/_30sdp"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:background="@drawable/submitbackground"
+                    android:text="Pay Now"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:text="Features:-"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:padding="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:foregroundGravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/img"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:src="@drawable/photocamera"
+                    android:layout_height="@dimen/_40sdp"/>
+
+                <TextView
+                    android:id="@+id/cource"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Video Lesson"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_below="@+id/cource"
+                    android:layout_toRightOf="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="@string/video_msg"/>
+
+            </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/gray"
+                    android:layout_height="@dimen/_1sdp">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:padding="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:foregroundGravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/img3"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:src="@drawable/question"
+                    android:layout_height="@dimen/_40sdp"/>
+
+                <TextView
+                    android:id="@+id/cource3"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/img3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="On Demand Doubt Clearing"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_below="@+id/cource3"
+                    android:layout_toRightOf="@+id/img3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="@string/on_demand_msg"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_height="@dimen/_1sdp">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:padding="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:foregroundGravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/img2"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:src="@drawable/logo"
+                    android:layout_height="@dimen/_40sdp"/>
+
+                <TextView
+                    android:id="@+id/cource2"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Class IX -Kerala State-Language Special with"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_below="@+id/cource2"
+                    android:layout_toRightOf="@+id/img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:text="discription"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_height="@dimen/_1sdp">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:padding="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:foregroundGravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/imgs"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:src="@drawable/eighthclass"
+                    android:layout_height="@dimen/_40sdp"/>
+
+                <TextView
+                    android:id="@+id/cources"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/imgs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Class IX -Kerala State-Language Special with"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_below="@+id/cources"
+                    android:layout_toRightOf="@+id/imgs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:text="discription"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_height="@dimen/_1sdp">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:padding="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:foregroundGravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/img22"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:src="@drawable/eighthclass"
+                    android:layout_height="@dimen/_40sdp"/>
+
+                <TextView
+                    android:id="@+id/cource22"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/img22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Class IX -Kerala State-Language Special with"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_below="@+id/cource22"
+                    android:layout_toRightOf="@+id/img22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:text="discription"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_height="@dimen/_1sdp">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:padding="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:foregroundGravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/img5"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:src="@drawable/eighthclass"
+                    android:layout_height="@dimen/_40sdp"/>
+
+                <TextView
+                    android:id="@+id/cource5"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/img5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Class IX -Kerala State-Language Special with"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_below="@+id/cource5"
+                    android:layout_toRightOf="@+id/img5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:text="discription"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_height="@dimen/_1sdp">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:padding="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:foregroundGravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/img4"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:src="@drawable/eighthclass"
+                    android:layout_height="@dimen/_40sdp"/>
+
+                <TextView
+                    android:id="@+id/cource4"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/img4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Class IX -Kerala State-Language Special with"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_below="@+id/cource4"
+                    android:layout_toRightOf="@+id/img4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:text="discription"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_height="@dimen/_1sdp">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+</LinearLayout>

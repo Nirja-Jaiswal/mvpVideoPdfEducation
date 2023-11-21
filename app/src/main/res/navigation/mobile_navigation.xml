@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/study">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.Padhantueducation.view_section.ui.home.Fragment.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_study" />
+
+
+    <fragment
+        android:id="@+id/Course_Package_List"
+        android:name="com.Padhantueducation.view_section.ui.mymembership.MyMembershipListFragment"
+        android:label="@string/Course_Package_List"
+        tools:layout="@layout/fragment_packagelist" />
+
+
+
+    <fragment
+        android:id="@+id/purchase_history"
+        android:name="com.Padhantueducation.view_section.ui.my_order.PurchaseHistoryFragment"
+        android:label="@string/purchase_history"
+        tools:layout="@layout/fragment_purchasehistory" />
+
+    <fragment
+        android:id="@+id/your_cource"
+        android:name="com.Padhantueducation.view_section.ui.my_cource.MyCourceFragment"
+        android:label="@string/menu_myCource"
+        tools:layout="@layout/fragment_mycource" />
+
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.Padhantueducation.view_section.ui.home.Fragment.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_study"
+        />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.Padhantueducation.view_section.ui.about.AboutFragment"
+
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_study"
+        />
+
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="com.Padhantueducation.view_section.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+         />
+
+
+
+    <fragment
+        android:id="@+id/terms_condition"
+        android:name="com.Padhantueducation.view_section.ui.terms.TermsFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+
+
+
+    <fragment
+        android:id="@+id/study"
+        android:name="com.Padhantueducation.view_section.ui.home.Fragment.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_study" />
+
+
+
+    <fragment
+        android:id="@+id/doubts"
+        android:name="com.Padhantueducation.view_section.ui.doubts.DoubtsFragment"
+        android:label="@string/doubts"
+        tools:layout="@layout/fragment_doubts" />
+    <fragment
+        android:id="@+id/helpline"
+        android:name="com.Padhantueducation.view_section.ui.helpLine.HelpLineFragment"
+        android:label="@string/helpline"
+        tools:layout="@layout/fragment_qanda" />
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.Padhantueducation.view_section.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+
+
+</navigation>

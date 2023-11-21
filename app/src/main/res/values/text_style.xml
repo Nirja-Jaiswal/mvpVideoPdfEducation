@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="text_14yelllow_bold">
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/aileron_semibold</item>
+    </style>
+
+    <style name="text_20yellow_bold">
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:textSize">@dimen/_20sdp</item>
+        <item name="android:fontFamily">@font/aileron_semibold</item>
+    </style>
+
+    <style name="text_18red_bold">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:fontFamily">@font/aileron_semibold</item>
+    </style>
+
+    <style name="text_18yellow_bold">
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:fontFamily">@font/aileron_semibold</item>
+    </style>
+
+    <style name="text_18black_bold">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:fontFamily">@font/aileron_semibold</item>
+    </style>
+
+    <style name="text_16black_bold">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/aileron_semibold</item>
+    </style>
+
+    <style name="text_16gray">
+        <item name="android:textColor">@color/light_black</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/aileron_light</item>
+    </style>
+
+    <style name="text_16red_bold">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/aileron_semibold</item>
+    </style>
+
+    <style name="text_12black_bold">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/aileron_semibold</item>
+    </style>
+
+    <style name="text_12white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/aileron_light</item>
+    </style>
+
+    <style name="text_12green">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/aileron_light</item>
+    </style>
+
+    <style name="text_12green_bold">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/aileron_semibold</item>
+    </style>
+
+    <style name="text_12gray_bold">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/aileron_semibold</item>
+    </style>
+
+    <style name="text_14light_gray_">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/aileron_semibold</item>
+    </style>
+
+    <dimen name="_14sdp">14dp</dimen>
+    <dimen name="_20sdp">20dp</dimen>
+    <dimen name="_18sdp">18dp</dimen>
+    <dimen name="_25sdp">25dp</dimen>
+    <dimen name="_16sdp">16dp</dimen>
+    <dimen name="_12sdp">12dp</dimen>
+    <dimen name="pin_content_layout_padding">40dp</dimen>
+    <dimen name="pin_label_margin">10dp</dimen>
+    <dimen name="pin_min_width">32dp</dimen>
+
+    <style name="MyCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="pin_edittext_style">
+        <item name="android:gravity">center</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:minEms">2</item>
+        <item name="android:inputType">number</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+</resources>

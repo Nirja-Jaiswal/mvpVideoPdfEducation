@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:weightSum="2"
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/_10sdp"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/question_counting"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_2sdp"
+                                        android:layout_marginRight="@dimen/_2sdp"
+                                        android:layout_weight="1.8"
+                                        android:background="@drawable/greencircle"
+                                        android:gravity="center"
+                                        android:text=""
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_16sdp"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/question"
+                                        android:layout_marginLeft="@dimen/_20sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight=".2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_16sdp"
+                                        android:text="In nodular iron, graphite is in the form of"/>
+
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="@dimen/_10sdp"
+                                    android:layout_height="wrap_content">
+                                        <RadioButton
+                                            android:layout_margin="@dimen/_5sdp"
+                                            android:button="@drawable/select_red_check"
+                                            android:layout_marginLeft="@dimen/_10sdp"
+                                            android:clickable="false"
+                                            android:id="@+id/radio_one"
+                                            android:text="Free Carbon"
+                                            android:layout_weight=".85"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"/>
+                                        <RadioButton
+                                            android:layout_marginLeft="@dimen/_10sdp"
+                                            android:clickable="false"
+                                            android:id="@+id/radio_two"
+                                            android:button="@drawable/select_red_check"
+                                            android:layout_margin="@dimen/_5sdp"
+
+
+                                            android:text="Free Carbon"
+                                            android:layout_weight=".85"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"/>
+
+                                        <RadioButton
+                                            android:button="@drawable/select_red_check"
+                                            android:layout_margin="@dimen/_5sdp"
+
+                                            android:layout_marginLeft="@dimen/_10sdp"
+                                            android:clickable="false"
+                                            android:id="@+id/radio_three"
+                                            android:text="Free Carbon"
+                                            android:layout_weight=".85"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"/>
+                                        <RadioButton
+                                            android:button="@drawable/select_red_check"
+                                            android:layout_margin="@dimen/_5sdp"
+
+                                            android:layout_marginLeft="@dimen/_10sdp"
+                                            android:clickable="false"
+                                            android:id="@+id/radio_four"
+                                            android:text="Free Carbon"
+                                            android:layout_weight=".85"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"/>
+
+
+                                    <LinearLayout
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        android:layout_width="match_parent"
+                                        android:orientation="vertical"
+                                        android:padding="@dimen/_10sdp"
+                                        android:background="@drawable/backgroundnew"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:textSize="@dimen/_16sdp"
+                                            android:textColor="@color/black"
+                                            android:text="Explanation"
+                                            android:textStyle="bold"
+                                            android:paddingLeft="@dimen/_10sdp"
+                                            android:paddingRight="@dimen/_10sdp"
+                                            android:paddingTop="@dimen/_5sdp"
+                                            android:paddingBottom="@dimen/_5sdp"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/explanation"
+                                            android:layout_width="wrap_content"
+                                            android:textSize="@dimen/_14sdp"
+                                            android:textColor="@color/black"
+                                            android:text="SpheroidsIn nodular iron, graphite is in the form of In nodular iron, graphite is in the form of"
+                                            android:layout_marginLeft="@dimen/_20sdp"
+                                            android:layout_height="wrap_content" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

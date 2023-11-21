@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "139215452431",
+    "firebase_url": "https://padhantueducation.firebaseio.com",
+    "project_id": "padhantueducation",
+    "storage_bucket": "padhantueducation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139215452431:android:3d10b7c7064e7d58b7267a",
+        "android_client_info": {
+          "package_name": "com.Padhantueducation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139215452431-to0r0ueraskgbaaf6q0nkvtiacdlqadt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Padhantueducation",
+            "certificate_hash": "85745a1e4441b1ee0477d71c65929534f978f249"
+          }
+        },
+        {
+          "client_id": "139215452431-796u73nh9mhmp7ij21hbkvrmr0ek1vm0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgVnxIrNVuS4GZDYQ2ju7W2RjZBXpqG0M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139215452431-796u73nh9mhmp7ij21hbkvrmr0ek1vm0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

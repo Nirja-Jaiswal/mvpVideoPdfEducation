@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_header_comment"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp"
+        >
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_header_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:text="@string/title_profile" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/takepic"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_150sdp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="@dimen/_150sdp"
+                            android:src="@drawable/ic_person"
+                            android:id="@+id/profile_image"
+                            app:civ_border_overlay="true"
+                            app:civ_border_color="#f98c8c"
+                            app:civ_border_width="@dimen/_2sdp" />
+
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_edit"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-40dp"
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:text="@string/updateprofile"
+
+                        />
+
+
+                    <EditText
+                        android:windowSoftInputMode="stateAlwaysVisible"
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:singleLine="false"
+                        android:isScrollContainer="true"
+                        android:focusable="true"
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/rectanglebackground"
+                        android:drawableLeft="@drawable/ic_person"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:hint="Name"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:padding="@dimen/_10sdp" />
+
+                    <EditText
+                        android:windowSoftInputMode="stateAlwaysVisible"
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:singleLine="false"
+                        android:isScrollContainer="true"
+                        android:focusable="false"
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/rectanglebackground"
+                        android:drawableLeft="@drawable/ic_email"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:hint="Email Id"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/_10sdp" />
+
+
+
+                    <EditText
+                        android:windowSoftInputMode="stateAlwaysVisible"
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:singleLine="false"
+                        android:isScrollContainer="true"
+                        android:focusable="false"
+                        android:id="@+id/et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/rectanglebackground"
+                        android:drawableLeft="@drawable/ic_phone"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:hint="Phone no"
+                        android:imeOptions="actionGo"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="@dimen/_10sdp" />
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/place_order"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_weight=".5"
+                        android:background="@color/colorPrimary"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Update Profile"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

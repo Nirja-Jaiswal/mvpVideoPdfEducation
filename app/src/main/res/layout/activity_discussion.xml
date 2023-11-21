@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_header_comment"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            android:padding="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/tv_header_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="Question and answer"
+                android:textColor="#fff" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:id="@+id/details"
+                    android:padding="@dimen/_20sdp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp"
+                        android:text="WHAT IS THE CONCEPT OF THE LESSON SHIVATHO SANDU PADHYAN ??"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:weightSum="3"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/light_gray"
+                            android:text="Asked on May 29 , 2020"/>
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/light_gray"
+                            android:text="at 10:18 |"/>
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Anju Gupta"/>
+
+                    </LinearLayout>
+
+                    <!--                    <TextView-->
+                    <!--                        android:paddingRight="@dimen/_30sdp"-->
+                    <!--                        android:paddingLeft="@dimen/_30sdp"-->
+                    <!--                        android:paddingTop="@dimen/_5sdp"-->
+                    <!--                        android:paddingBottom="@dimen/_5sdp"-->
+                    <!--                        android:layout_marginTop="@dimen/_20sdp"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:textSize="@dimen/_14sdp"-->
+                    <!--                        android:textColor="@color/colorPrimary"-->
+                    <!--                        android:background="@drawable/rectanglebackground"-->
+                    <!--                        android:text="8 Answer"/>-->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:padding="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:windowSoftInputMode="stateAlwaysVisible"
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:isScrollContainer="true"
+                        android:focusable="true"
+                        android:id="@+id/et_email"
+                        android:gravity="left|top"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/rectanglebackground"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:hint="Type your answer here ...."
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/_10sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingBottom="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attachment"
+                        android:drawableLeft="@drawable/ic_attachment"/>
+
+
+                    <Button
+                        android:id="@+id/signInButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:paddingRight="@dimen/_20sdp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="Submit"
+                        android:textColor="#FFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_16sdp"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="@dimen/_20sdp"
+                        android:textStyle="bold"
+                        android:text="Answers ...."/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_20sdp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16sdp"
+                            android:text="Dioclation"/>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/light_gray"
+                                android:text="answered on May 30 , 2020"/>
+
+                            <TextView
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/light_gray"
+                                android:text="at 10:18 |"/>
+
+                            <TextView
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/colorPrimary"
+                                android:text="Pinkee Gupta answer a question"/>
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="@color/gray"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_height="@dimen/_1sdp">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:padding="@dimen/_20sdp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16sdp"
+                            android:text="Dioclation"/>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/light_gray"
+                                android:text="answered on May 30 , 2020"/>
+
+                            <TextView
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/light_gray"
+                                android:text="at 10:18 |"/>
+
+                            <TextView
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/colorPrimary"
+                                android:text="Pinkee Gupta answer a question"/>
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="@color/gray"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_height="@dimen/_1sdp">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

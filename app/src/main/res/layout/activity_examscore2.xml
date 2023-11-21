@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/question_counting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_weight="1.8"
+                    android:background="@drawable/greencircle"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="11"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/TvQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight=".2"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@drawable/hoursimg"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight=".2"
+                    android:id="@+id/ImgQuestion"
+                    android:layout_width="@dimen/_300sdp"
+
+                    android:layout_height="150dp"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+
+                        <RadioButton
+                            android:checked="false"
+                            android:id="@+id/radio_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_weight="0" />
+
+                        <TextView
+                            android:id="@+id/TvOptionA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_weight="2"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16sdp"
+                            />
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:src="@drawable/hoursimg"
+                            android:layout_weight="2"
+                            android:id="@+id/ImgOptionA"
+                            android:layout_width="@dimen/_300sdp"
+                            android:layout_height="150dp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+
+                        <RadioButton
+                            android:checked="false"
+                            android:id="@+id/radio_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_weight="0" />
+
+                        <TextView
+                            android:id="@+id/TvOptionB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_weight="2"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16sdp"
+                            />
+
+
+
+                        <ImageView
+                            android:visibility="gone"
+
+                            android:src="@drawable/hoursimg"
+                            android:layout_weight="2"
+                            android:id="@+id/ImgOptionB"
+                            android:layout_width="@dimen/_300sdp"
+
+                            android:layout_height="150dp"/>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+
+                        <RadioButton
+                            android:checked="false"
+                            android:id="@+id/radio_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_weight="0" />
+
+                        <TextView
+                            android:id="@+id/TvOptionC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_weight="2"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16sdp"
+                            />
+
+
+
+                        <ImageView
+                            android:visibility="gone"
+
+                            android:src="@drawable/hoursimg"
+                            android:layout_weight="2"
+                            android:id="@+id/ImgOptionC"
+                            android:layout_width="@dimen/_300sdp"
+
+                            android:layout_height="150dp"/>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+
+                        <RadioButton
+                            android:checked="false"
+                            android:id="@+id/radio_four"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_weight="0" />
+
+                        <TextView
+
+                            android:id="@+id/TvOptionD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_weight="2"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16sdp"
+                            />
+
+
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:src="@drawable/biology"
+                            android:layout_weight="2"
+                            android:id="@+id/ImgOptionD"
+                            android:layout_width="@dimen/_300sdp"
+                            android:layout_height="150dp"/>
+
+
+
+                    </LinearLayout>
+
+
+                </RadioGroup>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/explanationlayout"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textSize="@dimen/_16sdp"
+                        android:textColor="@color/black"
+                        android:text="Explanation"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:id="@+id/explanation"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        android:text=""
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

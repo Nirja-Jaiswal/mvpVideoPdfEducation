@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:ignore="MissingDefaultResource">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:src="@drawable/support"/>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:textAlignment="center"
+            style="@style/text_16black_bold"
+            android:layout_width="match_parent"
+            android:text="Have a Query ?"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_phone"
+                style="@style/text_12gray_bold"
+                android:layout_width="match_parent"
+                android:padding="@dimen/_10sdp"
+                android:inputType="number"
+                android:drawablePadding="@dimen/_15sdp"
+                android:hint="Type your Phone No ...."
+                android:background="@drawable/rectanglebackground"
+                android:drawableLeft="@drawable/flag"
+                android:layout_height="wrap_content"/>
+
+
+
+
+            <EditText
+                android:windowSoftInputMode="stateAlwaysVisible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:id="@+id/et_query"
+                android:gravity="left|top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rectanglebackground"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="Type your question here ...."
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/_10sdp" />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_margin="@dimen/_30sdp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/submit"
+                android:background="@drawable/round_button"
+                android:layout_width="match_parent"
+                android:text="Submit"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

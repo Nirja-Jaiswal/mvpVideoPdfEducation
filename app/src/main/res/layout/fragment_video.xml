@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view_section.ui.my_cource.Fragment.MyVideoFragment">
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:src="@drawable/video_image"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:src="@drawable/video2"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</FrameLayout>

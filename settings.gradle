@@ -1,0 +1,2 @@
+rootProject.name='Olavo Education'
+include ':app'
